@@ -1,0 +1,584 @@
+/* mini-navbar */
+.mini-navbar{
+  background-color:antiquewhite;
+  height: 30px;
+  display: flex;
+ font-size: 12px;
+ justify-content: center;
+ gap: 10px;
+ 
+}
+.mini-navbar p{
+  margin-top: 5px;
+}
+.mini-navbar button{
+  border: none;
+  border-radius: 5px;
+  background-color: #94bbe9;
+  font-size: 10px;
+  height: 20px;
+  margin-top: 5px;
+}
+      
+ /* Header section  */
+:root{
+  --txt1-color:#94bbe9;
+  --txt2-color:antiquewhite;
+ 
+}
+ header{
+  margin: 0%;
+ }
+ .navbar{
+  height: 40px;
+ }
+.nav-logo1{
+   font-size: 15px;
+    color:var(--txt1-color);
+    font-family:cursive;
+    
+  }
+  .nav-logo2{
+  color: var(--txt2-color);
+  font-family: monospace;
+  }
+  
+  
+  .nav-register{
+   margin-right: 10px;
+
+  }
+  .nav-register button{
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: serif;
+    padding: 1px;
+    width: 90px;
+    background-color:var(--txt2-color);
+    border-radius: 5px;
+  }
+  
+  
+  .nav-register button:hover{
+    background-color:var(--txt1-color);
+    letter-spacing: 2px;
+    transition: 1s;  
+  }
+  
+  .nav-logo1 b:hover{
+    color: var(--txt2-color);
+    transition: 0.5s;
+  
+  }
+  .nav-logo2 b:hover{
+    color:var(--txt1-color);
+    transition: 0.5s;
+  }
+  #navbarContent{
+  margin-left: 350px;
+  }
+  .nav-link:visited{
+    color: var(--txt2-color);
+  }
+  .nav-link  {
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-left: 10px;
+    color: var(--txt2-color);
+  }
+  .nav-link:hover{
+    color:var(--txt1-color);
+    letter-spacing: 1px;
+    transition: 1s;
+
+  }
+  .nav-link:active{
+    color: var(--txt1-color);
+  }  
+
+  /* Content or Home */
+  .home-img{
+    margin: auto;
+    max-width: 850px;
+    margin-top: 10px;
+    animation: fadeIn 1.25s ease-in-out forwards;
+   
+  }
+  /* .companies-Lists */
+  .companies{
+    text-align: center;
+    animation: appear 1.25s ease-in-out forwards;
+  }
+  .companies figure{
+    display: flex;
+   margin: 10px;
+   gap: 20px;
+   animation: scroll 15s  linear infinite ;
+  }
+  @keyframes scroll {
+    0%{
+      transform: translateX(0);
+    }
+  100%{
+      transform: translateX(-100%);
+    }
+  }
+
+  .digital-marketing h3{
+      margin: 20px ;
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 20px;
+  }
+  .digital-marketing p{
+    margin-inline: 100px;
+   font-size: 12px;
+   font-family: verdana;
+}
+.digital-marketing span{
+  color: #6b9cdd;
+}
+  
+.courses{
+
+  padding: 20px;
+  background-color: azure;
+  text-align: center;
+}
+.courses h3{
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: verdana;
+  
+}
+.cards{
+margin-inline: 40px;
+
+}
+.card-title{
+  font-size: 15px;
+  font-family: verdana;
+  font-weight:  bold;
+}
+.card-text{
+  font-size: 12px;
+  font-family: verdana;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* Limits text to 3 lines */
+  -webkit-box-orient: vertical;
+  
+}
+.buttons{
+  display: flex;
+}
+.btn{
+  font-size: 10px;
+  
+}
+.card:hover{
+ 
+  box-shadow: 6px 6px 5px #6b9cdd ;
+  margin: 1px;
+}
+.students,.Recognitions{
+  text-align: center;
+  font-family: verdana;
+  animation: appear 1.25s ease-in-out forwards;
+}
+.students h3 {
+  font-size: 20px;
+  margin:20px 0px 50px;
+  display: inline-block; 
+  position: relative; 
+}
+
+.students h3::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.students img{
+  margin-inline: 40px;
+}
+.Recognitions h3{
+  font-family: verdana;
+  margin:20px 0px 50px;
+  display: inline-block; 
+  position: relative; 
+  font-size: 20px;
+}
+.Recognitions img{
+  margin-inline: 40px;
+}
+.Recognitions h3::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+/* section:1 About section */
+.about-heading{
+ display: flex;
+ padding: 40px;
+ animation: fadeIn 1.5s ease-in-out forwards;
+
+}
+.about-content{
+ margin-left: 20px;
+ background-image: url('/images/bg2-img.png');
+ font-family: Verdana;
+ font-size: 12px;
+ word-spacing: 5px;
+
+}
+.about-content h2{
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* section:2 core values */
+
+.about-end{
+ display: flex;
+ margin: 40px;
+}
+.core-values h2{
+margin-left: 35px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.content{
+ display: flex;
+ padding: 15px;
+ margin: 20px;
+ font-size: 20px;
+ border-radius: 6px;
+ box-shadow: 2px 2px 10px ;
+ 
+}
+.content i{
+  color:#0070ff ;
+  margin-inline: 10px;
+}
+.content h4{
+ font-family: Verdana;
+ font-size: 12px;
+ align-content:end;
+}
+.content:hover{
+ box-shadow: 2px 2px 10px #94bbe9 ;
+}
+
+/* section:3 mission-vision */
+.mission-vision{
+ display: flex;
+ justify-content: space-around;
+ background: rgb(238,174,202);
+ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);  margin: 20px;
+ 
+}
+.mission-vision  p{
+  font-size: small;
+}
+.vision {
+text-align: center;
+padding: 20px;
+font-family: Verdana;
+
+}
+.vision img{
+ border-radius: 100%;
+}
+.mission {
+ text-align: center;
+ padding: 20px;
+ font-family: Verdana;
+}
+.mission img{
+ border-radius: 100%;
+}
+
+ /* section:4 student-feedback  */
+.student-feedback{
+ text-align: center;
+ padding: 20px;
+ margin: 40px;
+ font-size: 12px;
+ font-family: Verdana;
+}
+.student-feedback h3{
+ margin-bottom: 30px;
+}
+
+
+/* section: 1 Footer */
+.footer-section{
+  background-color: #a2c1e6;
+  
+ }
+.footer-items{
+  display: flex;
+   margin: 20px; 
+}
+
+.footer-items ul{
+  list-style: none;
+  font-family: Verdana;
+  font-size: 11px;
+  line-height: 30px;
+}
+.footer-items li ,a{
+  color:#555555;
+  text-decoration-line: none;
+}
+.footer-logo{
+  padding: 20px;
+  font-size: 10px;
+  font-family: Verdana;
+}
+.footer-logo p{
+ width: 400px;
+ color: #555555;
+ 
+}
+
+.footer-items h4{
+  padding: 20px;
+ font-size: 12px;
+}
+.social-links{
+line-height: 30px;
+font-size: 12px;
+}
+.contact-details{
+line-height: 30px;
+font-size: 12px;
+}
+
+/* section:2 footer end */
+ .footer-end{
+  padding: 1px;
+  border-radius: 5px;
+
+ 
+ }
+ .copyright-content{
+  color: gray;
+  text-align: center;
+  margin-top: 10px; 
+  font-size: small;
+  padding: 0px; 
+ }
+
+ /* sections Animations */
+ 
+ .mission-vision,.about-end,.student-feedback,.courses,.Recognitions,.students,.digital-marketing{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0%;
+ }
+ @keyframes appear {
+  from{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+ }
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-100px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+ /* about section media queries */
+/* media Queries for desponsive design */
+@media screen and (max-width: 576px) {
+  .about-heading, .about-end, .mission-vision, .footer-items {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .about-content, .core-values {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .nav-link {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .nav-register button {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .vision img, .mission img {
+    width: 50px;
+  }
+
+  .footer-logo p {
+    width: auto;
+    padding: 0 10px;
+  }
+} 
+
+/* Medium devices (tablets) */
+ @media screen and (max-width: 768px) {
+  #navbarContent {
+    margin-left: 0;
+  }
+
+  .about-heading, .about-end {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content h4 {
+    font-size: 14px;
+  }
+
+  .student-feedback {
+    font-size: 14px;
+  }
+
+  .footer-items {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Large devices (desktops) */
+ @media screen and (max-width: 992px) {
+  .nav-link {
+    margin-left: 20px;
+  }
+
+  .mission-vision {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .content {
+    font-size: 18px;
+  }
+}
+
+/* Extra large devices (larger desktops) */
+ @media screen and (max-width: 1200px) {
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .footer-items {
+    justify-content: space-around;
+  }
+} 
+
+ /* home section media queries */
+
+/* Tablet screens (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .home-img img {
+      width: 100%;
+      height: auto;
+  }
+
+  .companies figure img {
+      width: 80px;
+  }
+
+  .cards .card {
+      width: 100%;
+  }
+}
+
+/* Mobile screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .mini-navbar {
+      text-align: center;
+      flex-direction: column;
+  }
+
+  .mini-navbar button {
+      margin-top: 10px;
+  }
+
+  .navbar-nav {
+      text-align: center;
+  }
+
+  .courses .row {
+      flex-direction: column;
+  }
+
+  .companies figure {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .companies figure img {
+      width: 70px;
+      margin: 5px;
+  }
+
+  .footer-items {
+      flex-direction: column;
+      text-align: center;
+  }
+}
+
+/* Small mobile screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .navbar-toggler {
+      font-size: 1rem;
+  }
+
+  .home-img img {
+      width: 100%;
+      height: auto;
+  }
+
+  .courses h3 {
+      font-size: 1.2rem;
+  }
+
+  .courses .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .students figure img,
+  .Recognitions figure img {
+      width: 150px;
+  }
+}
