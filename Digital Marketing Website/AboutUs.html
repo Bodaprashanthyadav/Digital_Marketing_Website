@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ampex Education - AboutUs</title>
+    <link rel="icon" href="https://media.licdn.com/dms/image/v2/D560BAQGdqDEY9WLQZQ/company-logo_200_200/B56ZUanJNLHQAI-/0/1739908224385/ampexedu_logo?e=1749686400&v=beta&t=_di7FkYf_WQJXO4-vuM4xnT1Gv7VjkcIMBwFFi6q5kM" />
+
+    <!-- Google Tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-978ECJZGXB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); } 
+        gtag('js', new Date());
+
+        gtag('config', 'G-978ECJZGXB');
+    </script>
+
+    <style>
+        /* Global Styles */
+:root {
+    --primary-color: #1e3a8a;
+    --secondary-color: #3b82f6;
+    --accent-color: #60a5fa;
+    --light-color: #f0f9ff;
+    --dark-color: #0f172a;
+    --success-color: #10b981;
+    --gradient-primary: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    --gradient-secondary: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+    --box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6rem;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    margin: 1rem;
+    
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* About Us Section */
+.About-us {
+    margin-bottom: 3rem;
+    
+}
+
+.aboutus-banner {
+    background: var(--gradient-primary);
+    height: 250px;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+}
+.about-content {
+    text-align: center;
+}
+
+.about-img {
+    margin: auto;
+}
+
+.about-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.about-img h4 {
+    background: var(--accent-color);
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 6px;
+}
+.section-title::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 4px;
+            background: var(--gradient-primary);
+            margin-top: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+/* Why Choose Ampex Education? */
+.CAE {
+    padding: 5rem 0;
+    background: white;
+}
+
+.cae-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.cae-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+}
+
+.cae-list h3 {
+    background-color: var(--accent-color);
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+}
+
+.CAE ul {
+    padding: 1rem; 
+}
+
+.entrepreneurs,
+.freelancers,
+.students {
+    background: var();
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: var(--dark-color);
+    width: 100%;
+    max-width: 30rem;
+    box-shadow: var(--box-shadow);
+}
+
+.students {
+    grid-column: span 2;
+    margin: auto;
+    
+}
+.students ul{
+    text-align: left;
+}
+
+
+/* Our Commitment Section */
+.commitment-section {
+    background: var(--gradient-secondary);
+    padding: 3rem 0;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.commitment-section h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.commitment-section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+  /* cta,call to action section */
+
+.cta-banner {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); 
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    margin: 3rem auto;
+    max-width: 900px; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+
+
+/* Headline Text */
+.cta-banner p {
+    margin: 0;
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+}
+
+
+@media (max-width: 900px) {
+    .cae-list {
+        grid-template-columns: 1fr;  /* Ensures single column layout */
+        gap: 1.5rem;
+    }
+
+    .students {
+        grid-column: span 1 !important; /* Ensure it spans only one column */
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+/* Fix for 700px - 900px */
+@media (min-width: 700px) and (max-width: 900px) {
+    .cae-list {
+        grid-template-columns: repeat(2, 1fr); /* Two-column layout for better spacing */
+    }
+
+    .students {
+        grid-column: span 2; /* Centers it on the second row */
+        margin: auto;
+        text-align: center;
+    }
+}
+
+/* General Responsive Styling */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .aboutus-banner {
+        height: 150px;
+        font-size: 1.5rem;
+    }
+
+    .cae-list {
+        grid-template-columns: 1fr;
+    }
+
+    .students {
+        grid-column: span 1;
+    }
+}
+
+
+
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .cae-list {
+        grid-template-columns: 1fr;
+    }
+
+    .students {
+        grid-column: span 1;
+    }
+}
+
+.about-img,.about-img h4,.aboutus-banner,.section-title,.cae-list,.commitment-section p,.cta-banner,.cta-banner p,.entrepreneurs,.entrepreneurs ul,.freelancers,.freelancers ul,.students,.students ul{
+           animation: fade linear;
+            animation-timeline: view();
+            animation-range-start: 0%;
+            animation-range-end: 20%;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- header-section -->
+<section>
+    <div id="Header-placeholder"></div>
+</section>
+
+    <!-- About-us section -->
+    <section class="About-us">
+        <div class="container">
+            <div class="aboutus-banner">
+                <h1>About Us</h1>
+            </div>
+            <div class="about-content">
+                <div>
+                    <h1 class="section-title">Wellcome to Ampex Education</h1>
+                    <p>At <b>Ampex Education</b>, we are dedicated to empowering individuals with the skills and
+                        knowledge necessary to
+                        excel in today's digital landscape. Our comprehensive programs in<b> Digital Marketing, Data
+                        Science,</b> and
+                        <b>UI/UX Design </b>are meticulously crafted to bridge the gap between theoretical concepts and
+                        practical
+                        applications, ensuring our students are well-prepared for real-world challenges.</p>
+                </div>
+                <div class="about-img">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7e8551150988653.63044ef407d30.jpg" alt="achievement-img" width="400vh">
+                    <div >
+                        <h4>The Best Education Company for 2025</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Ampex Education? -->
+    <section class="CAE">
+        <div class="container">
+            <div class="cae-header">
+                <h1 class="section-title">Why Choose Ampex Education?</h1>
+            </div>
+            <div class="cae-list">
+                <div class="entrepreneurs">
+                    <div>
+                        <h3>For Entrepreneurs & Business Owners</h3>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Access to mentorship programs that provide guidance on securing funding and scaling
+                                businesses.</li>
+                            <li>Advanced course content emphasizing practical learning to enhance online business
+                                growth.
+                            </li>
+                            <li>Opportunities to work on live campaigns with actual budgets during the course.</li>
+                            <li>Direct mentorship from industry experts to refine business strategies.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="freelancers">
+                    <div>
+                        <h3>For Freelancers & Job Seekers</h3>
+                    </div>
+                    <div class="">
+                        <ul>
+                            <li>Guaranteed internships and work experiences with our network of partner agencies.</li>
+                            <li>Comprehensive placement support, connecting you with leading companies across various
+                                industries.</li>
+                            <li>Training in freelancing to help you generate income during and after the course.</li>
+                            <li>Certifications from renowned platforms like Google, Facebook, and HubSpot, enhancing
+                                your
+                                professional credibility.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="students">
+                    <div>
+                        <h3>For Students</h3>
+                    </div>
+                    <div >
+                        <ul>
+                            <li>Instruction from certified trainers who are experts in their respective fields</li>
+                            <li>Development of personal websites during training to apply and showcase your learning.
+                            </li>
+                            <li>Engagement in case studies, capstone projects, and an agency-style training environment.
+                            </li>
+                            <li>Joint certifications from recognized industry bodies, adding value to your professional
+                                profile.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- our commitment section -->
+    <section class="commitment-section">
+        <div class="container">
+            <div >
+                <h1 class="section-title">Our Commitment</h1>
+            </div>
+            <div>
+                <p>
+                    We pride ourselves on offering industry-relevant courses that are designed to equip you with the
+                    competencies and expertise needed to thrive in today's rapidly evolving digital landscape. Our focus
+                    on practical learning, mentorship, and real-world exposure ensures that our students are not only
+                    job-ready but also capable of driving innovation in their respective fields.
+                </p>
+            </div>
+        </div>
+    </section>
+       <!-- cta ,Call-to-action -->
+        <section class="cta">
+            <div class="cta-banner">
+                <p>Join us at Ampex Education and take the first step towards unlocking your potential in the dynamic
+                    world of digital skills</p>
+            </div>
+        </section>
+    
+       <!-- Footer Placeholder -->
+        <section>
+          <div id="footer-placeholder"></div>
+        </section>
+
+          <script src="script.js"></script>
+</body>
+
+</html>

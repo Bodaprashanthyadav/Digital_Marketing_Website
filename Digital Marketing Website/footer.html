@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ampex Education-Footer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+     <!-- Google Tag (gtag.js) -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-978ECJZGXB"></script>
+     <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag() { dataLayer.push(arguments); }
+         gtag('js', new Date());
+ 
+         gtag('config', 'G-978ECJZGXB');
+     </script>
+</head>
+<style>
+    
+        /* Global Styles */
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #3b82f6;
+            --accent-color: #60a5fa;
+            --light-color: #f0f9ff;
+            --dark-color: #0f172a;
+            --success-color: #10b981;
+            --gradient-primary: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            --gradient-secondary: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+            --box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+
+
+
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--secondary-color);
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+
+        }
+
+
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2rem;
+        }
+
+      
+
+        /* Footer */
+        .footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 2rem 0 1rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-content {
+            grid-column: span 3;
+        
+        }
+
+        .footer-title {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem !important;
+            position: relative;
+           
+
+        }
+
+        .footer-title::after {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background: var(--secondary-color);
+            bottom: -10px;
+            left: 0;
+        }
+
+        .footer-links {
+            list-style: none;
+           
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+     
+    
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            margin-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background-color: var(--secondary-color);
+            color: var(--dark-color);
+            transform: translateY(-3px);
+        }
+
+        .contact-info {
+            display: flex;
+            /* align-items: center;
+            margin-top: 0.5rem; */
+        }
+
+        .contact-icon {
+            margin: 0.2rem 0.5rem 0 0;
+            color: var(--secondary-color);
+            font-size: small;
+
+        }
+
+        /*  footer- terms&policies  */
+
+        .footer-term-policies {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .footer-term-policies h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer-term-policies h3::after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background: var(--secondary-color);
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .footer-policylinks {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 0;
+        }
+
+        .footer-policylinks li {
+            display: inline-block;
+        }
+
+        .footer-policylinks a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-policylinks a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #cbd5e1;
+        }
+
+        /*  footer- terms&policies  */
+        @media screen and (max-width: 480px) {
+            .footer-policylinks {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .footer-policylinks li {
+                display: block;
+                margin: 5px;
+            }
+        }
+
+        /* WhatsApp & Chatbot */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            margin-block: 5px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: var(--box-shadow);
+            z-index: 999;
+            transition: all 0.3s ease;
+        }
+
+        .chatbot-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: var(--box-shadow);
+            z-index: 999;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-btn:hover,
+        .chatbot-btn:hover {
+            transform: scale(1.1);
+        }
+
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .footer-content {
+                grid-column: span 6;
+            }
+
+        }
+
+        
+
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-column: span 12;
+            }
+
+           
+        }
+
+
+        /* footer mediqueries */
+        @media screen and (max-width: 580px) {
+
+            /* Use 580px for mobile responsiveness */
+            .footer {
+                text-align: center;
+            }
+
+            .grid {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-content {
+                text-align: center;
+                width: 100%;
+            }
+
+            .footer-title {
+                text-align: center;
+            }
+
+            .footer-title::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .footer-links {
+                padding: 0;
+                text-align: center;
+            }
+
+            .footer-links li {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .footer-policylinks {
+                text-align: center;
+                list-style: none;
+                padding: 0;
+            }
+
+            .footer-policylinks li {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+
+
+    
+</style>
+<body>
+    
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="grid">
+                <div class="footer-content">
+                    <h3 class="footer-title">Ampex Education</h3>
+                    <p>Premier institute for digital marketing education with industry-recognized courses and placement
+                        assistance.</p>
+                    <div class="social-links">
+                        <a href="https://www.Facebook.com/ampexeducation/" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/ampexeducation/" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.pinterest.com/ampexeducation/" class="social-link"><i class="bi bi-pinterest"></i></a>
+                        <a href="https://www.twitter.com/ampexeducation/" class="social-link"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="footer-content"  >
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="/AboutUs.html">About Us</a></li>
+                        <li><a href="/Webiner.html">Webinar</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <h3 class="footer-title">Our Courses</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Foundation in Digital marketing</a></li>
+                        <li><a href="#">Skill-degree in Digital Marketing</a></li>
+                        <li><a href="#">Master in Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <div class="contact-info">
+                        <span class="contact-icon">📞</span>
+                        <p>+91-8800860478</p>
+                    </div>
+                    <div class="contact-info">
+                        <span class="contact-icon">✉️</span>
+                        <p>info@ampexedu.com</p>
+                    </div>
+                    <div class="contact-info">
+                        <span class="contact-icon">📍</span>
+                        <p>20 MB road Battarahalli, Bangalore, Karnataka, India</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-term-policies">
+                <div>
+                    <h3>Terms & Policies</h3>
+                </div>
+                <ul class="footer-policylinks">
+                    <li><a href="/TermsAndConditions.html" target="_parent">Terms and Conditions </a></li>
+                    <li><a href="/PaymentTermsAndRefundPolicy.html" target="_parent">Payment Terms and Refund Policy </a></li>
+                    <li><a href="/PrivacyPolicy.html" target="_parent"> Privacy Policy </a></li>
+                </ul>
+                <div class="copyright">
+                    <p>&copy; 2025 Ampex Education. All Rights Reserved.</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Chat Button -->
+    <a href="https://api.whatsapp.com/send?phone=918800860478&text=Hi,%20I%20need%20some%20more%20details%20about%20the%20course."
+        target="_blank" class="whatsapp-btn">
+        <img src="/images/whatsapp.webP"
+            alt="WhatsApp icon" width="50px" />
+    </a>
+
+    <!-- mode Button -->
+    <a href="#" class="chatbot-btn"><img
+            src="/images/chatbot.webP"
+            alt="" width='50px' style="border-radius: 50%;" /></a>
+    
+</body>
+</html>
